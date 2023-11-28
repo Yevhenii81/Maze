@@ -45,7 +45,7 @@ int maze[heigth][width] = {};
 
 
 // 2) Функция, которая инициализирует лабиринт
-void initializeMaze(int maze[][width], int width, int heigth)
+void InitializeMaze(int maze[][width], int width, int heigth)
 {
 	for (int y = 0; y < heigth; y++)
 	{
@@ -86,7 +86,7 @@ void initializeMaze(int maze[][width], int width, int heigth)
 }
 
 // 3)Функция, которая рисует лабиринт
-void printMaze(int maze[][width], int width, int heigth)
+void PrintMaze(int maze[][width], int width, int heigth)
 {
 	for (int y = 0; y < heigth; y++)
 	{
@@ -126,7 +126,7 @@ void printMaze(int maze[][width], int width, int heigth)
 
 //4) функция, которая скрывает курсор
  
-void hideCursor(bool vision, int size)
+void HideCursor(bool vision, int size)
 {
 	HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
 	CONSOLE_CURSOR_INFO info;
