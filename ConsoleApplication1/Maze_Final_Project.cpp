@@ -23,7 +23,7 @@ int main()
     HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
 
 	// функция, которая скрывает курсор
-	hideCursor(false, 100);
+	HideCursor(false, 100);
 
     srand(time(0));
 
@@ -36,10 +36,10 @@ int main()
 
 
     // Функция, которая инициализирует лабиринт
-    initializeMaze(maze, width, height);
+    InitializeMaze(maze, width, height);
 
     // Функция, которая рисует лабиринт
-    printMaze(maze, width, height);
+    PrintMaze(maze, width, height);
 
     COORD position;
     position.X = 0;
